@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, p {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    h4 {
+        font-weight: bold;
+        line-height: 210%;
+    }
+}
+
+.main-btn {
+@apply inline-block px-8 py-4 font-bold text-white duration-300 bg-blue-700 rounded-full;
+}
+.main-btn:hover {
+@apply bg-blue-400;
+}
+
+.koeb-btn {
+    @apply inline-block px-4 py-4 text-white duration-300 bg-blue-700 rounded-full;
+}
+.koeb-btn:hover {
+@apply bg-blue-400;
+}
+    
+.gradient-btn:hover {
+background-position: right center;
+@apply shadow-xl;
+}
+
+.gradient-btn {
+background-image: linear-gradient(to right, #0067f4 0%, #2bdbdc 50%, #0067f4 100%);
+background-size: 200% auto;
+overflow: hidden;
+}
